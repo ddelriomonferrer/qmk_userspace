@@ -1,6 +1,7 @@
 {
     "userspace_version": "1.0",
     "build_targets": [
-        "ferris/sweep", "ddr"
+        "ferris/sweep:ddr"
     ]
 }
+
