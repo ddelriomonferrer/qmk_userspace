@@ -9,9 +9,6 @@
 // Prevent hold being registered if released within tap term (similar to tap-preferred)
 #define RETRO_TAPPING
 
-// Activa el modificador en cuanto se pulsa otra tecla (vital para HRM)
-#define PERMISSIVE_HOLD
-
 // Flow Tap: desactiva holds durante escritura rápida a ráfagas
 #define FLOW_TAP_TERM 150
 
