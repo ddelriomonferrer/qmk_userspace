@@ -12,6 +12,12 @@
 // Activa el modificador en cuanto se pulsa otra tecla (vital para HRM)
 #define PERMISSIVE_HOLD
 
+// Flow Tap: desactiva holds durante escritura rápida a ráfagas
+#define FLOW_TAP_TERM 150
+
+// Chordal Hold: restringe holds a combinaciones de manos opuestas correctamente
+#define CHORDAL_HOLD
+
 // EEPROM storage for layer state
 #define EEPROM_LAYER_STICKY
 
