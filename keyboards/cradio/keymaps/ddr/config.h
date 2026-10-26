@@ -6,11 +6,9 @@
 // Enable per-key tapping terms
 #define TAPPING_TERM_PER_KEY
 
-// Prevent hold being registered if released within tap term (similar to tap-preferred)
-#define RETRO_TAPPING
 
 // Flow Tap: desactiva holds durante escritura rápida a ráfagas
-#define FLOW_TAP_TERM 150
+#define FLOW_TAP_TERM 250
 
 // Chordal Hold: restringe holds a combinaciones de manos opuestas correctamente
 #define CHORDAL_HOLD

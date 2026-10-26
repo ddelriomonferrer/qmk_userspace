@@ -11,6 +11,15 @@ enum layers {
     _NUM_L
 };
 
+// Chordal Hold Handedness layout (L for left hand, R for right hand, * for thumbs/exempt)
+const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM =
+    LAYOUT_split_3x5_2(
+        'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R',
+        'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R',
+        'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R',
+                  '*', '*', '*', '*'
+    );
+
 // Keymaps definition
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_WIN] = LAYOUT_split_3x5_2(
@@ -69,7 +78,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case RCTL_T(KC_K):
         case RALT_T(KC_L):
         case RGUI_T(KC_QUOT):
-            return 450;
+            return 350;
         case LT(_ARR_L, KC_ENT):
         case LT(_LOW_L, KC_TAB):
             return 200;
