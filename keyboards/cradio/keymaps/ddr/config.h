@@ -3,6 +3,9 @@
 // Global default tapping term (in milliseconds)
 #define TAPPING_TERM 180
 
+// Debounce time in milliseconds to filter switch chatter / double activations
+#define DEBOUNCE 15
+
 // Enable per-key tapping terms
 #define TAPPING_TERM_PER_KEY
 
