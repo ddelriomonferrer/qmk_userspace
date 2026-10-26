@@ -3,14 +3,15 @@
 // Global default tapping term (in milliseconds)
 #define TAPPING_TERM 180
 
+// Debounce time in milliseconds to filter switch chatter / double activations
+#define DEBOUNCE 15
+
 // Enable per-key tapping terms
 #define TAPPING_TERM_PER_KEY
 
-// Prevent hold being registered if released within tap term (similar to tap-preferred)
-#define RETRO_TAPPING
 
 // Flow Tap: desactiva holds durante escritura rápida a ráfagas
-#define FLOW_TAP_TERM 150
+#define FLOW_TAP_TERM 250
 
 // Chordal Hold: restringe holds a combinaciones de manos opuestas correctamente
 #define CHORDAL_HOLD
